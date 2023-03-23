@@ -2,7 +2,7 @@ import { Schema } from "mongoose";
 
 export const GalaxySchema = new Schema({
     stars: { type: Number, required: true },
-    name: { type: String, required: true, maxLength: 12 }
+    name: { type: String, required: true, maxLength: 20 }
 },
     { timestamps: true, toJSON: { virtuals: true }}
 )
